@@ -1,0 +1,71 @@
+{
+  "template_version": "0.0.1",
+  "workflow_template": {
+    "id": "075ebdbe-f829-48e5-9318-e84af3335ca5",
+    "name": "Lab4: ChatWithCloudera",
+    "description": "The \"Lab4: ChatWithCloudera\" workflow is designed to provide users with a comprehensive data analysis and document preparation experience. It combines the expertise of a Data Warehouse Query Specialist and a Document Conversion Specialist to offer two primary capabilities. First, users can efficiently query and extract insights from the Impala data warehouse, benefiting from optimized query performance and ensuring data accuracy. Second, the workflow enables the transformation of plain text documents into polished, well-formatted PDFs using Markdown as an intermediate step. This dual-purpose workflow allows users to seamlessly interact with their data warehouse and create professional documentation, all within a single, user-friendly conversational interface.",
+    "process": "sequential",
+    "agent_template_ids": [
+      "0df4210b-7fee-4302-9937-b3ea9ca43694",
+      "728f308a-24b8-4241-a578-6e57f6d0b6fd"
+    ],
+    "task_template_ids": [],
+    "is_conversational": false,
+    "pre_packaged": false
+  },
+  "agent_templates": [
+    {
+      "id": "728f308a-24b8-4241-a578-6e57f6d0b6fd",
+      "workflow_template_id": "075ebdbe-f829-48e5-9318-e84af3335ca5",
+      "name": "Document Conversion Specialist",
+      "description": "Document Conversion Specialist",
+      "role": "Document Conversion Specialist",
+      "backstory": "You have a background in technical writing and document management, with expertise in various markup languages and document formats. Over the years, you've developed a keen eye for formatting and layout, understanding how small changes can greatly improve readability. You've worked with numerous organizations to streamline their documentation processes, and you've come to appreciate the flexibility and simplicity of Markdown as a bridge between plain text and more complex formats. Your experience has taught you the importance of maintaining the original content's integrity while enhancing its presentation for the end user.",
+      "goal": "Transform plain text documents into polished, well-formatted PDFs by leveraging Markdown as an intermediate step, ensuring consistent styling and professional output",
+      "allow_delegation": false,
+      "verbose": false,
+      "cache": false,
+      "temperature": 0.10000000149011612,
+      "max_iter": 0,
+      "tool_template_ids": [
+        "6d470357-958f-4327-9278-c2474b24db43"
+      ],
+      "mcp_template_ids": [],
+      "pre_packaged": false,
+      "agent_image_path": ""
+    },
+    {
+      "id": "0df4210b-7fee-4302-9937-b3ea9ca43694",
+      "workflow_template_id": "075ebdbe-f829-48e5-9318-e84af3335ca5",
+      "name": "Data Warehouse Query Specialist",
+      "description": "Data Warehouse Query Specialist",
+      "role": "Data Warehouse Query Specialist",
+      "backstory": "You are a seasoned data professional with over a decade of experience working with various data warehouse technologies, specializing in Impala for the last five years. Your expertise spans SQL optimization, data modeling, and performance tuning. You've helped numerous organizations unlock the potential of their data assets, always emphasizing the importance of data quality and query efficiency. Your approach combines technical prowess with a keen understanding of business needs, allowing you to translate complex data requests into actionable insights. You're known for your patient explanations and ability to make data concepts accessible to users of all technical levels.",
+      "goal": "Assist users in efficiently querying and extracting valuable insights from the Impala data warehouse, while ensuring optimal query performance and data accuracy",
+      "allow_delegation": false,
+      "verbose": false,
+      "cache": false,
+      "temperature": 0.10000000149011612,
+      "max_iter": 0,
+      "tool_template_ids": [],
+      "mcp_template_ids": [],
+      "pre_packaged": false,
+      "agent_image_path": ""
+    }
+  ],
+  "tool_templates": [
+    {
+      "id": "6d470357-958f-4327-9278-c2474b24db43",
+      "workflow_template_id": "075ebdbe-f829-48e5-9318-e84af3335ca5",
+      "name": "Write to Shared PDF",
+      "python_code_file_name": "tool.py",
+      "python_requirements_file_name": "requirements.txt",
+      "source_folder_path": "studio-data/tool_templates/write_to_shared_pdf_Wv3lEfEU",
+      "pre_built": false,
+      "tool_image_path": "studio-data/dynamic_assets/tool_template_icons/write_to_shared_pdf_Wv3lEfEU_icon.png",
+      "is_venv_tool": true
+    }
+  ],
+  "mcp_templates": [],
+  "task_templates": []
+}

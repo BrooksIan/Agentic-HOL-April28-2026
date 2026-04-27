@@ -6,6 +6,12 @@ On April 28th, we are hosting a virtual hands-on lab focused on **Cloudera Agent
 
 In the federal vertical, the goal is always clear: **Data-driven outcomes at the speed of the mission.**
 
+## Images
+
+![Clockworks - Aamir](images/Clockworks_Aamir.png)
+
+![Clockworks - Ian](images/Clockworks_Ian.png)
+
 ## Mission-Centric Learning Objectives
 
 ### 🤖 Agentic Design Fundamentals
@@ -26,4 +32,4 @@ Equip your agents with secure toolsets from the AWS ecosystem and beyond. We wil
 To participate in the lab, ensure you have access to the Cloudera environment provided in your registration email. 
 
 **Join us to roll up your sleeves and see how these tools map to your agency’s modernization goals.**
-"""
+
