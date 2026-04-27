@@ -8,9 +8,9 @@ In the federal vertical, the goal is always clear: **Data-driven outcomes at the
 
 ## Images
 
-![Clockworks - Aamir](images/Clockworks_Aamir.png)
+<img src="images/Clockworks_Aamir.png" alt="Clockworks - Aamir" width="30%" />
 
-![Clockworks - Ian](images/Clockworks_Ian.png)
+<img src="images/Clockworks_Ian.png" alt="Clockworks - Ian" width="30%" />
 
 ## Mission-Centric Learning Objectives
 
